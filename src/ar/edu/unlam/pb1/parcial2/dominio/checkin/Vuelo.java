@@ -63,10 +63,13 @@ public class Vuelo {
 		 */
 		
 		for(int i= 0; i<pasajeros.length; i++) {
+                       if(pasjeros[i] != null){
 			if(pasajeros[i].getDni() == dni) {
 				return pasajeros[i];
 			}
 		}
+               }
+
 		return null;
 	}
 
